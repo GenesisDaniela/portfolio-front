@@ -6,19 +6,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  URL = ""
+  URL = "http://127.0.0.1:5000/"
+  // URL = "https://portfoliogv.herokuapp.com/api/"
   constructor(private http:HttpClient) { }
 
   getUser(idUser:number): Observable<any>{
-    return this.http.get<any>(this.URL+"user/"+idUser)
+    return this.http.get<any>(this.URL+"users/"+idUser)
   }
 
   getUserProjects(idUser:number): Observable<any>{
-    return this.http.get<any>(this.URL+"user/"+idUser+"/projects")
+    return this.http.get<any>(this.URL+"projects/"+idUser+"/project")
   }
 
   getUserSkills(idUser:number): Observable<any>{
-    return this.http.get<any>(this.URL+"user/"+idUser+"/skills")
+    return this.http.get<any>(this.URL+"skills/"+idUser+"/skill")
   }
 
 }
