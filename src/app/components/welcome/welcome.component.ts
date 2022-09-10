@@ -37,6 +37,7 @@ export class WelcomeComponent implements OnInit {
   getSkills(){
     this.userService.getUserSkills(this.idUser).subscribe(skills=>{
       this.skills = skills
+      console.log(skills)
     })
   }
 
