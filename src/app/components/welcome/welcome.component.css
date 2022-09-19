@@ -142,3 +142,37 @@ p {
     text-align: left;
     padding: 10px;
 }
+
+
+/* CSS */
+
+.button-88 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    width: 60px;
+    padding: 12px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 2px;
+    background: #ad5389;
+    background: linear-gradient(0deg, #416fef 0%, #5345b9fe);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #0c2ca298;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.button-88:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #416fef;
+}
+
+.button-88:active {
+    box-shadow: 0 0.3em 1em -0.5em #416fef;
+}

@@ -101,6 +101,7 @@
                             </div>
                         </div>
 
+
                     </div>
 
                 </div>
@@ -108,6 +109,7 @@
         </div>
     </div>
     <!-- end about -->
+
 
     <!-- start portfolio -->
     <div id="portfolio" class="section">
@@ -119,6 +121,9 @@
                 <div *ngFor="let project of projects" class="col-md-6 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
                     <div class="card">
                         <div class="img-avatar">
+                            <div class="button-88" routerLink="/project/{{project.id_project}}">
+                                <i class='fas fa-exclamation-circle' style='font-size:34px'></i>
+                            </div>
                         </div>
                         <div class="card-text">
                             <div class="portada" style='background-image: url("{{project.images[0].img_url}}")'>
@@ -134,6 +139,7 @@
 
                                     <div style="margin-top: 5px;"><i class='fas fa-user-alt' style='font-size:24px'></i> Costumer: {{project.customer}}</div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -143,6 +149,7 @@
             </div>
         </div>
     </div>
+
     <!-- end portfolio -->
 
     <!-- start footer -->
@@ -150,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
-                    <p>Copyright &copy; 2018 Lavish Personal Profile . Designed by <a rel="nofollow noopener" href="https://templatemo.com">templatemo</a></p>
+                    <p>Génesis Vargas - Portfolio</p>
                 </div>
             </div>
         </div>

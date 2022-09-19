@@ -6,12 +6,14 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     WelcomeComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
